@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rozha One' rel='stylesheet'>
+    <style>
+        footer {
+            background-color: #979797;
+            max-height: fit-content;
+        }
+        body{
+            background-color: #e6e3c7;
+        }
+        .login {
+            background-color: #1a1d20;
+            color: white;
+        }
+
+        .letra {
+            color: #9C9C9C;
+        }
+
+        .form-container {
+            width: 300px;
+        }
+
+        .form-control {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid gray;
+            color: white;
+            border-radius: 0;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid gray;
+            color: white;
+            border-radius: 0;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+        .fondo-volver {
+            background-color: #2C2C2C;
+        }
+    </style>
+</head>
+<body class="fondo-color">
+<header>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white fs-1" style="font-family: Rozha One" href="#">SHARA</a>
+
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="container-fliud my-5">
+        <div class="row m-0">
+            <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1 col-xs-12 login">
+                <div class="container-fluid">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="container-fluid p-5 text-center fs-1" style="font-family: Rozha One">
+                        Login
+                    </div>
+                    <div class="form-container mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="usuario" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="usuario" name="usuario"
+                                       placeholder="Ingresa tu usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contrasena" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena"
+                                       placeholder="Ingresa tu contraseña">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mb-5">
+                        <button type="button" class="btn btn-light">Entrar</button>
+                        <button type="button" class="btn fondo-volver">Volver</button>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="container-fluid d-flex justify-content-center align-items-center h-100 p-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                              d="M15.725 22v-7.745h2.6l.389-3.018h-2.99V9.31c0-.874.243-1.47 1.497-1.47h1.598v-2.7a21 21 0 0 0-2.33-.12c-2.304 0-3.881 1.407-3.881 3.99v2.227H10v3.018h2.607V22H3.104C2.494 22 2 21.506 2 20.896V3.104C2 2.494 2.494 2 3.104 2h17.792C21.506 2 22 2.494 22 3.104v17.792c0 .61-.494 1.104-1.104 1.104z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="col text-center py-1">
+                    <p class="fw-bold fs-4 m-0">Contacto</p>
+                    <p class="p-0 m-0">Email</p>
+                    <p class="p-0 m-0">Teléfono</p>
+                    <p class="p-0 m-0">Lugar</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="col text-center py-1">
+                    <p class="fw-bold fs-4 m-0">Información</p>
+                    <p class="p-0 m-0">Poĺitica</p>
+                    <p class="p-0 m-0">Privacidad</p>
+                    <p class="p-0 m-0">...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/26b15eb05d.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</body>
+</html>
